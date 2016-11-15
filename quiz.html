@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+
+        <title>Homework #4.1 - CRYSTALS GAME By Raul Vega</title>
+
+        <!-- Added link to the jQuery Library -->
+            <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+        <!--Added link to Bootstrap-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!--Added link to stylesheet css-->
+            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+        
+            <!--Setting Container-->
+<div class="container">
+
+            <!--Set background color-->
+<body background="https://static.vecteezy.com/system/resources/previews/000/098/341/original/free-question-mark-background-vector.jpg">
+
+            <!-- When we start playing the game, our HTML will be placed into this div.--> 
+                    <div id="game"></div>
+
+
+            <!--First Row: Title -->
+                <div class="row">
+                    <div class="col-lg-12"><h1>Totally Trivial Trivia!</h1></div>
+                </div>
+                <br>
+
+
+            <!-- Here we have our button with id startButton -->
+                <div class="text-center">
+                    <button id="startButton" class="btn btn-primary btn-lg" value="start"><img src="assets/images/startbuttonsquare.jpg" width="60" height="30"></button>
+                </div>
+                <br>
+                    
+
+            <!--Second Row: Display Time Remaining for Player -->
+                <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-8"><p>Time Remaining: </p></div>
+                        <div class="col-sm-1"><p></p><span id="display"></span></div>
+                        <div class="col-sm-2"><p>Seconds</p></div>
+
+                </div>
+                <br>
+
+
+
+            <!--Third Row: Question presented to player with 4 multiple choice answers-->
+                <div class="row">
+                    <div class="col-lg-12"><h4>FIRST QUESTION PRESENTED:</h4></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12"><p>MULTIPLE CHOICE ANSWERS.........:</p></div>
+                </div>
+
+
+
+<p>Which team won the Baseball World Series in 2016?</p>
+<ul>
+<li><input type="radio" name="ques1answer" value="1"> chi  </li>
+<li><input type="radio" name="ques1answer" value="0"> hou  </li>
+<li><input type="radio" name="ques1answer" value="0"> cle  </li>
+<li><input type="radio" name="ques1answer" value="0"> new  </li>
+</ul>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+            <!-- Row listing correct / incorrect answers-->
+                <div class="row">
+                    <!--<div class="col-md-2"><p>Random Number :</p><span id="randomNumber"></span></div>-->
+
+                    <div class="col-sm-8"><p>Correct Answers: </p></div>
+                    <div class="col-sm-1"><p></p><span id="correctAnswers"></span></div>
+
+                    <div class="col-sm-8"><p>Incorrect Answers: </p></div>
+                    <div class="col-sm-1"><p></p><span id="incorrectAnswers"></span></div>
+                    
+                    <div class="col-sm-8"><p>Unanswered: </p></div>
+                    <div class="col-sm-1"><p></p><span id="unanswered"></span></div>
+
+                </div>
+                <br>
+
+         
+     
+
+
+
+
+        <!-- Link to Javascript file -->
+          <script type="text/javascript" src="assets/javascript/quiz.js"></script>
+           
+</body>
+</div>
+</html>
