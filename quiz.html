@@ -3,7 +3,7 @@
 <head>
         <meta charset="UTF-8">
 
-        <title>Homework #4.1 - CRYSTALS GAME By Raul Vega</title>
+        <title>Homework #5.1 - TRIVIA GAME By Raul Vega</title>
 
         <!-- Added link to the jQuery Library -->
             <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
 
             <!--First Row: Title -->
                 <div class="row">
-                    <div class="col-lg-12"><h1>Totally Trivial Trivia!</h1></div>
+                    <div class="col-lg-12"><h1>Sports Trivia!</h1></div>
                 </div>
                 <br>
 
@@ -42,53 +42,84 @@
 
             <!--Second Row: Display Time Remaining for Player -->
                 <div class="row">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-8"><p>Time Remaining: </p></div>
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-4"><h4>Time Remaining: </h4></div>
                         <div class="col-sm-1"><p></p><span id="display"></span></div>
-                        <div class="col-sm-2"><p>Seconds</p></div>
+                        <div class="col-sm-2"><h4>Seconds</h4></div>
 
                 </div>
                 <br>
 
-
-
             <!--Third Row: Question presented to player with 4 multiple choice answers-->
-                <div class="row">
-                    <div class="col-lg-12"><h4>FIRST QUESTION PRESENTED:</h4></div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12"><p>MULTIPLE CHOICE ANSWERS.........:</p></div>
-                </div>
+                
 
 
+<h4>Which team won the Baseball World Series in 2016?</h4>
+<div class="panel-body">
+<div class="text-center">
+<input type="radio" name="ques1answer" value="1"> Chicago Cubs
+<input type="radio" name="ques1answer" value="0"> Houston Astros
+<input type="radio" name="ques1answer" value="0"> Cleveland Indians
+<input type="radio" name="ques1answer" value="0"> New York Yankess
+</div>
+</div>
+<br>
 
-<p>Which team won the Baseball World Series in 2016?</p>
-<ul>
-<li><input type="radio" name="ques1answer" value="1"> chi  </li>
-<li><input type="radio" name="ques1answer" value="0"> hou  </li>
-<li><input type="radio" name="ques1answer" value="0"> cle  </li>
-<li><input type="radio" name="ques1answer" value="0"> new  </li>
-</ul>
+<h4>Which team won the NFL Superbowl in 2016?</h4>
+<div class="panel-body">
+<div class="text-center">
+<input type="radio" name="ques2answer" value="0"> Arizona Cardinals
+<input type="radio" name="ques2answer" value="1"> Denver Broncos 
+<input type="radio" name="ques2answer" value="0"> Oakland Raiders   
+<input type="radio" name="ques2answer" value="0"> Miami Dolphins    
+</div>
+</div>
 <br>
 
 
-
-
-
-
-
-
-
-
-
+<h4>Which team won the NBA Championship in 2016?</h4>
+<div class="panel-body">
+<div class="text-center">
+<input type="radio" name="ques3answer" value="0"> San Antonio Spurs
+<input type="radio" name="ques3answer" value="0"> Portland Trailblazers
+<input type="radio" name="ques3answer" value="1"> Cleveland Cavaliers
+<input type="radio" name="ques3answer" value="0"> Houston Rockets
+</div>
+</div>
 <br>
+
+
+<h4>Which team won the Stanley Cup in 2016?</h4>
+<div class="panel-body">
+<div class="text-center">
+<input type="radio" name="ques4answer" value="1"> Pittsburgh Penguins
+<input type="radio" name="ques4answer" value="0"> Edmonton Oilers
+<input type="radio" name="ques4answer" value="0"> Boston Bruins
+<input type="radio" name="ques4answer" value="0"> San Jose Sharks
+</div>
+</div>
+<br>
+
+
+<h4>Which team will win the NFL Superbowl in 2016?</h4>
+<div class="panel-body">
+<div class="text-center">
+<input type="radio" name="ques5answer" value="0"> San Diego Chargers
+<input type="radio" name="ques5answer" value="0"> Oakland Raiders
+<input type="radio" name="ques5answer" value="0"> New England Patriots
+<input type="radio" name="ques5answer" value="1"> Houston Texans
+</div>
+</div>
 <br>
 <br>
 
             <!-- Row listing correct / incorrect answers-->
                 <div class="row">
-                    <!--<div class="col-md-2"><p>Random Number :</p><span id="randomNumber"></span></div>-->
+                    
+                    <div class="col-sm-12"><p>Check your score: </p></div>
+
+                    <div class="col-sm-8"><p>Quantity of Questions: </p></div>
+                    <div class="col-sm-1"><p></p><span id="quantityofquestions"></span></div>
 
                     <div class="col-sm-8"><p>Correct Answers: </p></div>
                     <div class="col-sm-1"><p></p><span id="correctAnswers"></span></div>
@@ -102,11 +133,7 @@
                 </div>
                 <br>
 
-         
-     
-
-
-
+        
 
         <!-- Link to Javascript file -->
           <script type="text/javascript" src="assets/javascript/quiz.js"></script>
